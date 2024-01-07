@@ -7,6 +7,7 @@ describe('Component ResultBox', () => {
     it('should render without crashing', () => {
         render(<ResultBox from="PLN" to="USD" amount={100} />);
       });
+
     describe('should render proper info about conversion when PLN -> USD', () => {
 
         const testCases = [
@@ -34,6 +35,7 @@ describe('Component ResultBox', () => {
             });
         };
     });
+    
     describe('should render proper info about conversion when USD -> PLN', () => {
 
         const testCases = [
